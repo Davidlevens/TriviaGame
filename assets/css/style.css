@@ -1,0 +1,45 @@
+.jumbotron {
+    background-image: url("../images/quiz-2058883_640.png");
+    background-size: cover;
+  
+  }
+  
+  .jumbotron h1 {
+    font-size: 50px;
+    color: #000;
+    text-shadow: 3px 3px #fff;
+   
+  }
+
+  .card h1 {
+    font-size: 50px;
+    color: #000;
+    text-shadow: 3px 3px #fff;
+     
+  }
+  
+  .instructions {
+    text-align: center; 
+  }
+
+
+
+  p {
+    font-size: 20px;  
+    line-height: 1.5em;
+      text-shadow: .2px .2px #898af0;
+  }
+
+  h2 {
+    font-size: 40px;
+    text-shadow: 2px 2px #8688e9;
+  }
+
+  .btn-lg {
+      font-size: 30px;
+  }
+
+   /* .container-fluid { 
+      background-image: url("../images/quiz-2058883_1280.png");
+
+  } */
