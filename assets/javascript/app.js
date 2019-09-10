@@ -124,15 +124,15 @@ var questions = [
 	setTimeout(questionCounter, 2000);
   }
   
-  function unanswered() {
-	unanswered++;
-	$('.main').append("<p class='times-up'>Time's up!</p>");
-	$('.right-answer').css('background-color', 'green');
-	$('.times-up')
-	  .delay(2000)
-	  .fadeOut(400);
-	setTimeout(questionCounter, 2000);
-  }
+//   function unanswered() {
+// 	unanswered++;
+// 	$('.main').append("<p class='times-up'>Time's up!</p>");
+// 	$('.right-answer').css('background-color', 'green');
+// 	$('.times-up')
+// 	  .delay(2000)
+// 	  .fadeOut(400);
+// 	setTimeout(questionCounter, 2000);
+//   }
   
   // Start the game
   function startGame() {
