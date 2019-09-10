@@ -69,7 +69,7 @@ var questions = [
   var game;
   var counter = 0;
   var clock;
-  var timer = 30;
+  var timer = 20;
   var correctCounter = 0;
   var incorrectCounter = 0;
   var unansweredCounter = 0;
@@ -138,7 +138,7 @@ var questions = [
   function startGame() {
 	$('.start-page').css('display', 'none');
 	$('.questions-page').css('visibility', 'visible');
-	$('.timer').html('<p>Time remaining: <span class="time">30</span></p>');
+	$('.timer').html('<p>Time remaining: <span class="time">20</span></p>');
   
 	$('.question').html(questions[counter].question);
 	var showingAnswers =
@@ -161,7 +161,7 @@ var questions = [
 	if (counter < 6) {
 	  counter++;
 	  startGame();
-	  timer = 30;
+	  timer = 20;
 	  timerHolder();
 	} else {
 	  finishGame();
@@ -200,7 +200,7 @@ var questions = [
 	correctCounter = 0;
 	incorrectCounter = 0;
 	unansweredCounter = 0;
-	timer = 30;
+	timer = 20;
 	startGame();
 	timerHolder();
   }
