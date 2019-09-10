@@ -84,7 +84,7 @@ var questions = [
 	});
   
 	$('body').on('click', '.answer', function(event) {
-	  // console.log($(this));
+	  console.log($(this));
 	  chosenAnswer = $(this).text();
 	  var answerCounter = questions[counter].answers;
   
@@ -105,7 +105,7 @@ var questions = [
 	});
   
 	$('body').on('click', '.reset-button', function(event) {
-	  event.preventDefault();
+	//   event.preventDefault();
 	  resetGame();
 	});
   });
@@ -124,15 +124,15 @@ var questions = [
 	setTimeout(questionCounter, 2000);
   }
   
-//   function unanswered() {
-// 	unanswered++;
-// 	$('.main').append("<p class='times-up'>Time's up!</p>");
-// 	$('.right-answer').css('background-color', 'green');
-// 	$('.times-up')
-// 	  .delay(2000)
-// 	  .fadeOut(400);
-// 	setTimeout(questionCounter, 2000);
-//   }
+  function unanswered() {
+	unansweredCounter++;
+	$('.main').append("<p class='times-up'>Time's up!</p>");
+	$('.right-answer').css('background-color', 'green');
+	$('.times-up')
+	  .delay(2000)
+	  .fadeOut(400);
+	setTimeout(questionCounter, 2000);
+  }
   
   // Start the game
   function startGame() {
