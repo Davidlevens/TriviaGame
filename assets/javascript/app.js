@@ -105,8 +105,8 @@ var questions = [
 	});
   
 	$('body').on('click', '.reset-button', function(event) {
-	//   event.preventDefault();
-	  resetGame();
+	 event.preventDefault();
+	 resetGame(); 
 	});
   });
   
@@ -186,9 +186,10 @@ var questions = [
   // Finishing the game
   function finishGame() {
 	var final = $('.main')
-	  .html("<p>All done, here's how you did!<p><br><br>")
-	  .append('<p>Correct Answers: ' + correctCounter + '</p><br>')
-	  .append('<p>Wrong Answers: ' + incorrectCounter + '</p>');
+	  .html("<p1>All done, here's how you did!</p1><br><br>")
+	  .append('<p1>Correct Answers: ' + correctCounter + '</p1><br>')
+	  .append('<p1>Wrong Answers: ' + incorrectCounter + '</p1><br>')
+	  .append('<p1>Unanswered: ' + unansweredCounter + '</p1>');
 	$(final).attr('<div>');
 	$(final).attr('class', 'final');
 	$('.final').append('<p><a class="btn btn-primary btn-lg reset-button" href="#">Restart the game!</a></p>');
