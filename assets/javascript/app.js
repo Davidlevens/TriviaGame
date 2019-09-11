@@ -3,7 +3,7 @@ var questions = [
 	{
 	  question: 'What does doctype in HTML do?',
 	  answers: [
-		{ answer: 'A. Tells the browser how to render the HTML markup', value: true },
+		{ answer: 'A. Tells the browser how to render the HTML markup', value: true  },
 		{ answer: 'B. Loads all references to external JavaScript files', value: false },
 		{ answer: 'C. Adds CSS styles to the HTML page', value: false },
 		{ answer: "D. It doesn't do anything it's just there as a comment to other developers", value: false }
@@ -104,9 +104,10 @@ var questions = [
 	  }
 	});
   
-	$('body').on('click', '.reset-button', function(event) {
-	 event.preventDefault();
+	$(document).on('click', '.reset-button', function(event) {
+	//  event.preventDefault();
 	 resetGame(); 
+	 console.log('hi');
 	});
   });
   
@@ -129,7 +130,7 @@ var questions = [
 	$('.main').append("<p class='times-up'>Time's up!</p>");
 	$('.right-answer').css('background-color', 'green');
 	$('.times-up')
-	  .delay(2000)
+	  .delay(4000)
 	  .fadeOut(400);
 	setTimeout(questionCounter, 2000);
   }
